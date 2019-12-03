@@ -63,9 +63,6 @@ new_ec_test(spaces_in_section_name whitespace.in " test 7 "
 new_ec_test(spaces_before_section_name whitespace.in test8.c
     "^key=value[ \t\n\r]*$")
 
-# test spaces after section name
-new_ec_test(spaces_after_section_name whitespace.in test9.c "^key=value[ \t\n\r]*$")
-
 # test spaces at beginning of line between properties
 new_ec_test_multiline(spaces_before_middle_property_ML whitespace.in test10.c
     "key1=value1[ \t]*[\n\r]+key2=value2[ \t]*[\n\r]+key3=value3[ \t\n\r]*")
